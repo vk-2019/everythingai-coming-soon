@@ -15,7 +15,7 @@
     @keyframes fadeIn { to { opacity: 1; } }
   </style>
 </head>
-<body class="bg-gradient-to-r from-purple-600 to-indigo-600 min-h-screen flex items-center justify-center text-white px-4">
+<body class="bg-gradient-to-r from-purple-600 to-indigo-600 min-h-screen flex items-center justify-center text-white px-4 relative">
   <header class="text-center space-y-4 max-w-lg">
     <h1 class="text-5xl font-extrabold">Something New Brewing</h1>
     <p class="text-lg opacity-75">We’re crafting something amazing—stay tuned!</p>
@@ -30,7 +30,7 @@
       el.textContent = `${days} days until launch!`;
     }, 1e3);
   </script>
-  <footer class="text-center opacity-50 mt-12">
+  <footer class="text-center opacity-50 w-full absolute bottom-4 left-0">
     <p>&copy; 2025 Everything AI. All rights reserved.</p>
   </footer>
 </body>
