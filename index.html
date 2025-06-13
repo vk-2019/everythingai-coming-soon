@@ -26,14 +26,12 @@
     const el  = document.getElementById('countdown');
     setInterval(() => {
       const diff = end - Date.now();
-/*************  ✨ Windsurf Command 🌟  *************/
       const days = Math.floor(diff / 864e5);
+      el.textContent = `${days} days until launch!`;
+    }, 1e3);
   </script>
   <footer class="text-center opacity-50 mt-12">
     <p>&copy; 2025 Everything AI. All rights reserved.</p>
   </footer>
-      el.textContent = `${days} days until launch!`;
-    }, 1e3);
-  </script>
 </body>
 </html>
