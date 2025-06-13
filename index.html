@@ -2,21 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Something New Brewing...</title>
+  <title>Everything AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  >
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { 
-      display: flex; 
-      align-items: center; 
-      justify-content: center;
-      height: 100vh; 
-      margin: 0;
-      font-family: sans-serif;
-      background: #f5f5f5;
-    }
-    h1 { color: #333; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, p { animation: fadeIn 1s ease-out forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
   </style>
 </head>
-<body>
-  <h1>A place holder for everything AI related is going to brew up here soon</h1>
+<body class="bg-gradient-to-r from-purple-600 to-indigo-600 min-h-screen flex items-center justify-center text-white px-4">
+  <header class="text-center space-y-4 max-w-lg">
+    <h1 class="text-5xl font-extrabold">Something New Brewing</h1>
+    <p class="text-lg opacity-75">We’re crafting something amazing—stay tuned!</p>
+    <div id="countdown" class="text-2xl mt-6"></div>
+  </header>
+  <script>
+    const end = new Date('2025-08-01T00:00:00').getTime();
+    const el  = document.getElementById('countdown');
+    setInterval(() => {
+      const diff = end - Date.now();
+      const days = Math.floor(diff / 864e5);
+      el.textContent = `${days} days until launch!`;
+    }, 1e3);
+  </script>
 </body>
 </html>
