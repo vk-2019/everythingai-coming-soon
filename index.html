@@ -13,16 +13,44 @@
     body { font-family: 'Inter', sans-serif; }
     h1, p { animation: fadeIn 1s ease-out forwards; opacity: 0; }
     @keyframes fadeIn { to { opacity: 1; } }
+    /* Scrolling mission statement styles */
+    .mission-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      background: rgba(31, 41, 55, 0.85); /* dark bg with opacity */
+      color: #fff;
+      z-index: 50;
+      overflow: hidden;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .mission-scroll {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100vw;
+      animation: scroll-left 18s linear infinite;
+      font-style: italic;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
   </style>
 </head>
 <body class="bg-gradient-to-r from-purple-600 to-indigo-600 min-h-screen flex flex-col items-center justify-center text-white px-4 relative">
-  <header class="text-center space-y-4 max-w-lg mt-12">
-    <!-- <img src="logo.svg" alt="Everything AI Logo" class="mx-auto mb-6 w-28 h-auto" /> -->
+  <div class="mission-bar">
+    <span class="mission-scroll">
+      Empowering everyone to understand, explore, and harness the potential of artificial intelligence by providing clear, comprehensive, and up-to-date information on AI models, tools, and concepts.
+    </span>
+  </div>
+  <header class="text-center space-y-4 max-w-lg mt-20">
     <h1 class="text-5xl font-extrabold">Something New Brewing</h1>
     <p class="text-lg opacity-75">We’re crafting something amazing—stay tuned!</p>
-    <p class="italic text-base opacity-90 border-l-4 border-white/30 pl-4 mt-6">
-      Empowering everyone to understand, explore, and harness the potential of artificial intelligence by providing clear, comprehensive, and up-to-date information on AI models, tools, and concepts.
-    </p>
   </header>
   <main class="flex flex-col md:flex-row gap-8 mt-16 mb-24 w-full max-w-4xl justify-center">
     <section class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20">
