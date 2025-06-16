@@ -29,20 +29,148 @@
       Empowering everyone to understand, explore, and harness the potential of artificial intelligence by providing clear, comprehensive, and up-to-date information on AI models, tools, and concepts.
     </p>
   </div>
-  <main class="flex flex-col md:flex-row gap-8 mt-16 mb-24 w-full max-w-4xl justify-center">
-    <section class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20">
+  <main class="flex flex-col md:flex-row flex-wrap gap-8 mt-16 mb-24 w-full max-w-4xl justify-center">
+    <section class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20 min-w-[220px]">
       <h2 class="text-2xl font-bold mb-4">AI Models</h2>
       <p class="opacity-80">Explore state-of-the-art AI models powering the future.</p>
     </section>
-    <section class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20">
+    <section class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20 min-w-[220px]">
       <h2 class="text-2xl font-bold mb-4">AI Tools</h2>
       <p class="opacity-80">Discover tools that make AI accessible and practical.</p>
     </section>
-    <section class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20">
+    <section class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20 min-w-[220px]">
       <h2 class="text-2xl font-bold mb-4">AI Concepts</h2>
       <p class="opacity-80">Learn the foundational concepts behind artificial intelligence.</p>
     </section>
+    <a id="show-poll-link" href="#ai-generalist-poll" class="bg-white/10 rounded-xl p-8 flex-1 text-center shadow-lg border border-white/20 min-w-[220px] cursor-pointer transition hover:bg-white/20 block">
+      <h2 class="text-2xl font-bold mb-4">AI Generalist Self-Evaluation</h2>
+      <p class="opacity-80">Take this brief survey to assess your AI knowledge and skills and see how you stack up as an AI generalist.</p>
+    </a>
   </main>
+
+  <!-- Poll Modal/Section (hidden by default) -->
+  <div id="ai-generalist-poll" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(67,56,202,0.95); z-index:1000; overflow:auto;">
+    <div class="max-w-2xl mx-auto my-16 bg-gradient-to-br from-purple-700 via-indigo-700 to-indigo-800 rounded-2xl p-8 text-white shadow-2xl relative border border-white/20">
+      <button id="close-poll" class="absolute top-4 right-6 text-3xl text-white/70 hover:text-white transition" style="background:none; border:none; cursor:pointer;">&times;</button>
+      <h2 class="text-3xl font-extrabold mb-6 text-center tracking-tight">AI Generalist Self-Evaluation</h2>
+      <form id="aiGeneralistPoll" class="space-y-6">
+        <ol class="space-y-4 text-left">
+          <li>
+            <p class="font-semibold mb-2">1. Fundamentals: <span class="font-normal">I can explain in my own words what AI, machine learning, and deep learning are, and how they relate to one another.</span></p>
+            <label class="mr-6"><input type="radio" name="q1" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q1" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">2. Math &amp; Statistics: <span class="font-normal">I understand why vectors, matrices, and probability underpin ML algorithms.</span></p>
+            <label class="mr-6"><input type="radio" name="q2" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q2" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">3. Algorithms: <span class="font-normal">I know at least three common ML families (decision trees, neural networks, clustering) and can pick the right one for a given problem.</span></p>
+            <label class="mr-6"><input type="radio" name="q3" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q3" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">4. Data Workflow: <span class="font-normal">I’m confident outlining an end-to-end pipeline: data cleaning, feature engineering, train/test splitting, and EDA.</span></p>
+            <label class="mr-6"><input type="radio" name="q4" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q4" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">5. Model Evaluation: <span class="font-normal">I can choose and interpret metrics (accuracy, F1, RMSE, etc.) and know when to favor precision/recall versus overall accuracy.</span></p>
+            <label class="mr-6"><input type="radio" name="q5" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q5" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">6. Deep Learning &amp; LLMs: <span class="font-normal">I’ve used a neural-network framework (TensorFlow or PyTorch) or can explain how transformers work.</span></p>
+            <label class="mr-6"><input type="radio" name="q6" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q6" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">7. Computer Vision: <span class="font-normal">I understand at a high level how convolutional neural networks process images and why they excel at vision tasks.</span></p>
+            <label class="mr-6"><input type="radio" name="q7" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q7" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">8. MLOps &amp; Deployment: <span class="font-normal">I know the key steps to containerize a model, deploy it as an API, and set up basic monitoring.</span></p>
+            <label class="mr-6"><input type="radio" name="q8" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q8" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">9. Ethics &amp; Governance: <span class="font-normal">I’m aware of common AI fairness and bias pitfalls, and general strategies to mitigate them.</span></p>
+            <label class="mr-6"><input type="radio" name="q9" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q9" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+          <li>
+            <p class="font-semibold mb-2">10. Product Integration: <span class="font-normal">I can describe how to frame an AI feature end-to-end—define the problem, identify data needs, outputs, and success metrics.</span></p>
+            <label class="mr-6"><input type="radio" name="q10" value="yes" class="accent-indigo-400"> Yes</label>
+            <label><input type="radio" name="q10" value="no" class="accent-indigo-400"> No / Not sure</label>
+          </li>
+        </ol>
+        <div class="text-center mt-8">
+          <button type="submit" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-8 py-2 rounded-full shadow transition">Submit</button>
+        </div>
+      </form>
+      <div id="pollResult" style="display:none;" class="mt-8 p-6 rounded-xl bg-white/10 border border-white/20 text-white">
+        <h3 class="text-2xl font-bold mb-2">Your AI Generalist Score: <span id="scorePct"></span>%</h3>
+        <div id="recommendations">
+          <p class="mb-2">If you answered “No” or “Not sure,” check out these resources:</p>
+          <ul id="recList" class="list-disc list-inside space-y-1"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // Show poll modal on card click
+  document.getElementById('show-poll-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('ai-generalist-poll').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  });
+  // Close poll modal
+  document.getElementById('close-poll').addEventListener('click', function() {
+    document.getElementById('ai-generalist-poll').style.display = 'none';
+    document.body.style.overflow = '';
+  });
+
+  // Poll logic
+  (function(){
+    const resources = {
+      q1: { text: 'AI For Everyone (Coursera)', url: 'https://www.coursera.org/learn/ai-for-everyone' },
+      q2: { text: 'MIT OCW: 18.06 Linear Algebra', url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/' },
+      q3: { text: 'The Elements of Statistical Learning', url: 'https://web.stanford.edu/~hastie/ElemStatLearn/' },
+      q4: { text: 'Python Data Science Handbook – Data Wrangling & EDA', url: 'https://jakevdp.github.io/PythonDataScienceHandbook/' },
+      q5: { text: 'Scikit-Learn Model Evaluation Guide', url: 'https://scikit-learn.org/stable/modules/model_evaluation.html' },
+      q6: { text: 'Hidden Technical Debt in ML Systems (Google Research)', url: 'https://research.google/pubs/pub43146/' },
+      q7: { text: '“Attention Is All You Need” (Vaswani et al.)', url: 'https://arxiv.org/abs/1706.03762' },
+      q8: { text: 'ImageNet Classification with Deep CNNs (Krizhevsky et al.)', url: 'https://arxiv.org/abs/1404.5997' },
+      q9: { text: 'Fairness and Machine Learning (free online book)', url: 'https://fairmlbook.org/' },
+      q10:{ text: 'Machine Learning Yearning (Andrew Ng)', url: 'https://www.deeplearning.ai/machine-learning-yearning/' }
+    };
+
+    document.addEventListener('submit', function(e){
+      if(e.target && e.target.id === 'aiGeneralistPoll') {
+        e.preventDefault();
+        let score = 0;
+        const recList = document.getElementById('recList');
+        recList.innerHTML = '';
+        for(let i=1; i<=10; i++){
+          const answer = e.target.elements['q'+i].value;
+          if(answer === 'yes') score += 10;
+          else {
+            const r = resources['q'+i];
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>Q${i}:</strong> <a href="${r.url}" target="_blank" rel="noopener">${r.text}</a>`;
+            recList.appendChild(li);
+          }
+        }
+        document.getElementById('scorePct').textContent = score;
+        document.getElementById('pollResult').style.display = 'block';
+        document.getElementById('pollResult').scrollIntoView({ behavior:'smooth' });
+      }
+    });
+  })();
+  </script>
   <footer class="text-center opacity-50 w-full absolute bottom-4 left-0">
     <p>&copy; 2025 Everything AI. All rights reserved.</p>
   </footer>
