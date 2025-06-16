@@ -136,16 +136,16 @@
   // Poll logic
   (function(){
     const resources = {
-      q1: { text: 'AI For Everyone (Coursera)', url: 'https://www.coursera.org/learn/ai-for-everyone' },
-      q2: { text: 'MIT OCW: 18.06 Linear Algebra', url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/' },
-      q3: { text: 'The Elements of Statistical Learning', url: 'https://web.stanford.edu/~hastie/ElemStatLearn/' },
-      q4: { text: 'Python Data Science Handbook – Data Wrangling & EDA', url: 'https://jakevdp.github.io/PythonDataScienceHandbook/' },
-      q5: { text: 'Scikit-Learn Model Evaluation Guide', url: 'https://scikit-learn.org/stable/modules/model_evaluation.html' },
-      q6: { text: 'Hidden Technical Debt in ML Systems (Google Research)', url: 'https://research.google/pubs/pub43146/' },
-      q7: { text: '“Attention Is All You Need” (Vaswani et al.)', url: 'https://arxiv.org/abs/1706.03762' },
-      q8: { text: 'ImageNet Classification with Deep CNNs (Krizhevsky et al.)', url: 'https://arxiv.org/abs/1404.5997' },
-      q9: { text: 'Fairness and Machine Learning (free online book)', url: 'https://fairmlbook.org/' },
-      q10:{ text: 'Machine Learning Yearning (Andrew Ng)', url: 'https://www.deeplearning.ai/machine-learning-yearning/' }
+      q1:  { text: 'AI For Everyone (Coursera)',                               url: 'https://www.coursera.org/learn/ai-for-everyone',                    author: 'Andrew Ng'                     },
+      q2:  { text: 'MIT OCW: 18.06 Linear Algebra',                             url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/',    author: 'Gilbert Strang'               },
+      q3:  { text: 'The Elements of Statistical Learning',                     url: 'https://web.stanford.edu/~hastie/ElemStatLearn/',                  author: 'Hastie, Tibshirani & Friedman'},
+      q4:  { text: 'Python Data Science Handbook – Data Wrangling & EDA',       url: 'https://jakevdp.github.io/PythonDataScienceHandbook/',            author: 'Jake VanderPlas'              },
+      q5:  { text: 'Scikit-Learn Model Evaluation Guide',                      url: 'https://scikit-learn.org/stable/modules/model_evaluation.html',    author: 'scikit-learn developers'      },
+      q6:  { text: 'Hidden Technical Debt in ML Systems (Google Research)',    url: 'https://research.google/pubs/pub43146/',                          author: 'Sculley et al.'               },
+      q7:  { text: '“Attention Is All You Need” (Vaswani et al.)',             url: 'https://arxiv.org/abs/1706.03762',                                 author: 'Vaswani et al.'                },
+      q8:  { text: 'ImageNet Classification with Deep CNNs (Krizhevsky et al.)',url: 'https://arxiv.org/abs/1404.5997',                                  author: 'Krizhevsky et al.'            },
+      q9:  { text: 'Fairness and Machine Learning (free online book)',          url: 'https://fairmlbook.org/',                                         author: 'Barocas, Hardt & Narayanan'   },
+      q10: { text: 'Machine Learning Yearning (Andrew Ng)',                    url: 'https://www.deeplearning.ai/machine-learning-yearning/',           author: 'Andrew Ng'                    }
     };
 
     document.addEventListener('submit', function(e){
@@ -160,7 +160,7 @@
           else {
             const r = resources['q'+i];
             const li = document.createElement('li');
-            li.innerHTML = `<strong>Q${i}:</strong> <a href="${r.url}" target="_blank" rel="noopener">${r.text}</a>`;
+            li.innerHTML = `<strong>Q${i}:</strong> <a href="${r.url}" target="_blank" rel="noopener" class="underline hover:text-indigo-300">${r.text}</a> <span class="text-sm opacity-80">by ${r.author}</span>`;
             recList.appendChild(li);
           }
         }
