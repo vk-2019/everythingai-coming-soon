@@ -211,78 +211,135 @@
   </div>
   <main id="main-content" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 mb-24 w-full max-w-6xl justify-center" aria-label="Main AI Information Cards">
     <h2 class="sr-only">Explore AI Topics</h2>
-    <section class="card-section" tabindex="0" aria-label="AI Models: Explore state-of-the-art AI models powering the future.">
-      <span class="mb-4 text-5xl" aria-hidden="true">🤖</span>
+    <section class="card-section flex flex-col items-center justify-center text-center" tabindex="0" aria-label="AI Models: Explore state-of-the-art AI models powering the future.">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style robot head icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="8" y="14" width="32" height="20" rx="10" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><circle cx="16" cy="24" r="2.5" fill="#fff"/><circle cx="32" cy="24" r="2.5" fill="#fff"/><rect x="20" y="8" width="8" height="6" rx="3" fill="#fff" fill-opacity="0.18" stroke="#fff" stroke-width="1.5"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Models</h2>
       <p class="opacity-80">Explore state-of-the-art AI models powering the future.</p>
     </section>
-    <section class="card-section" tabindex="0" aria-label="AI Tools: Discover tools that make AI accessible and practical.">
-      <span class="mb-4 text-5xl" aria-hidden="true">🛠️</span>
+    <section class="card-section flex flex-col items-center justify-center text-center" tabindex="0" aria-label="AI Tools: Discover tools that make AI accessible and practical.">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style gear/cog icon (distinct for AI Tools) -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto">
+          <circle cx="24" cy="24" r="8" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/>
+          <path d="M24 12v-4M24 40v-4M36 24h4M8 24h4M33.94 14.06l2.83-2.83M11.23 36.77l2.83-2.83M33.94 33.94l2.83 2.83M11.23 11.23l2.83 2.83" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="24" r="4" fill="#fff" fill-opacity="0.7"/>
+        </svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Tools</h2>
       <p class="opacity-80">Discover tools that make AI accessible and practical.</p>
     </section>
-    <section class="card-section" tabindex="0" aria-label="AI Concepts: Learn the foundational concepts behind artificial intelligence.">
-      <span class="mb-4 text-5xl" aria-hidden="true">📚</span>
+    <section class="card-section flex flex-col items-center justify-center text-center" tabindex="0" aria-label="AI Concepts: Learn the foundational concepts behind artificial intelligence.">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style book icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="8" y="12" width="14" height="24" rx="3" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><rect x="26" y="12" width="14" height="24" rx="3" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><path d="M22 16h4" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Concepts</h2>
       <p class="opacity-80">Learn the foundational concepts behind artificial intelligence.</p>
     </section>
-    <a id="show-poll-link" href="#ai-generalist-poll" class="card-section cursor-pointer transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Generalist Self-Evaluation: Take this brief survey to assess your AI knowledge and skills and see how you stack up as an AI generalist.">
-      <span class="mb-4 text-5xl" aria-hidden="true">🧑‍💻</span>
+    <a id="show-poll-link" href="#ai-generalist-poll" class="card-section flex flex-col items-center justify-center text-center cursor-pointer transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Generalist Self-Evaluation: Take this brief survey to assess your AI knowledge and skills and see how you stack up as an AI generalist.">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style user/brain icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><circle cx="24" cy="18" r="8" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><path d="M8 40c0-6.627 7.163-12 16-12s16 5.373 16 12" stroke="#fff" stroke-width="2" fill="#fff" fill-opacity="0.10"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Generalist Self-Evaluation</h2>
       <p class="opacity-80">Take this brief survey to assess your AI knowledge and skills and see how you stack up as an AI generalist.</p>
     </a>
-    <a href="news.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI News & Trends: Stay updated with the latest breakthroughs and news in AI." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">📰</span>
+    <a href="news.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI News & Trends: Stay updated with the latest breakthroughs and news in AI." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style newspaper icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="8" y="14" width="32" height="20" rx="4" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><rect x="14" y="20" width="8" height="4" rx="1" fill="#fff"/><rect x="14" y="26" width="20" height="2" rx="1" fill="#fff" fill-opacity="0.7"/><rect x="14" y="30" width="12" height="2" rx="1" fill="#fff" fill-opacity="0.7"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI News & Trends</h2>
       <p class="opacity-80">Stay updated with the latest breakthroughs and news in AI.</p>
     </a>
-    <a href="ethics.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Ethics & Society: Explore the ethical, social, and legal implications of AI." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">⚖️</span>
+    <a href="ethics.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Ethics & Society: Explore the ethical, social, and legal implications of AI." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style scales icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><path d="M24 10v24" stroke="#fff" stroke-width="2"/><path d="M12 34c0-4 4-8 8-8s8 4 8 8" stroke="#fff" stroke-width="2" fill="#fff" fill-opacity="0.10"/><path d="M36 34c0-4-4-8-8-8s-8 4-8 8" stroke="#fff" stroke-width="2" fill="#fff" fill-opacity="0.10"/><circle cx="24" cy="10" r="2" fill="#fff"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Ethics & Society</h2>
       <p class="opacity-80">Explore the ethical, social, and legal implications of AI.</p>
     </a>
-    <a href="learning-paths.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Learning Paths: Find curated learning paths for all levels, from beginner to expert." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">🧭</span>
+    <a href="learning-paths.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Learning Paths: Find curated learning paths for all levels, from beginner to expert." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style compass icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><circle cx="24" cy="24" r="16" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><polygon points="24,16 30,32 24,28 18,32" fill="#fff" fill-opacity="0.7"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Learning Paths</h2>
       <p class="opacity-80">Find curated learning paths for all levels, from beginner to expert.</p>
     </a>
-    <a href="datasets.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Datasets: Discover open datasets for training and experimenting with AI models." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">📊</span>
+    <a href="datasets.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Datasets: Discover open datasets for training and experimenting with AI models." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style bar chart icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="10" y="28" width="6" height="10" rx="2" fill="#fff" fill-opacity="0.7"/><rect x="20" y="20" width="6" height="18" rx="2" fill="#fff" fill-opacity="0.7"/><rect x="30" y="14" width="6" height="24" rx="2" fill="#fff" fill-opacity="0.7"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Datasets</h2>
       <p class="opacity-80">Discover open datasets for training and experimenting with AI models.</p>
     </a>
-    <a href="projects.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Projects & Demos: Explore hands-on projects and interactive AI demos." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">🧪</span>
+    <a href="projects.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Projects & Demos: Explore hands-on projects and interactive AI demos." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style flask/experiment icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="20" y="10" width="8" height="16" rx="4" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><path d="M24 26v8a8 8 0 01-8 8h16a8 8 0 01-8-8v-8" stroke="#fff" stroke-width="2" fill="#fff" fill-opacity="0.10"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Projects & Demos</h2>
       <p class="opacity-80">Explore hands-on projects and interactive AI demos.</p>
     </a>
-    <a href="careers.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Careers & Jobs: Find AI-related job opportunities and career advice." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">💼</span>
+    <a href="careers.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Careers & Jobs: Find AI-related job opportunities and career advice." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style briefcase icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="12" y="18" width="24" height="16" rx="4" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><rect x="18" y="14" width="12" height="6" rx="2" fill="#fff" fill-opacity="0.18" stroke="#fff" stroke-width="1.5"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Careers & Jobs</h2>
       <p class="opacity-80">Find AI-related job opportunities and career advice.</p>
     </a>
-    <a href="events.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Events & Meetups: Discover upcoming AI conferences, events, and local meetups." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">📅</span>
+    <a href="events.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Events & Meetups: Discover upcoming AI conferences, events, and local meetups." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style location pin with calendar dot icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto">
+          <path d="M24 8c-6.627 0-12 5.373-12 12 0 7.5 12 20 12 20s12-12.5 12-20c0-6.627-5.373-12-12-12z" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/>
+          <circle cx="24" cy="20" r="4" fill="#fff" fill-opacity="0.7"/>
+        </svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Events & Meetups</h2>
       <p class="opacity-80">Discover upcoming AI conferences, events, and local meetups.</p>
     </a>
-    <a href="podcasts.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Podcasts & Videos: Listen to top AI podcasts and watch educational videos." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">🎧</span>
+    <a href="podcasts.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Podcasts & Videos: Listen to top AI podcasts and watch educational videos." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style headphones icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><path d="M8 28a16 16 0 0132 0v8a4 4 0 01-4 4h-2a4 4 0 01-4-4v-6a2 2 0 012-2h2a2 2 0 012 2v6" stroke="#fff" stroke-width="2" fill="#fff" fill-opacity="0.10"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Podcasts & Videos</h2>
       <p class="opacity-80">Listen to top AI podcasts and watch educational videos.</p>
     </a>
-    <a href="startups.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Startups & Companies: Learn about innovative AI startups and leading companies." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">🏢</span>
+    <a href="startups.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Startups & Companies: Learn about innovative AI startups and leading companies." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style rocket launch icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto">
+          <path d="M24 6c6 6 12 18 12 24a12 12 0 01-24 0C12 24 18 12 24 6z" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/>
+          <circle cx="24" cy="28" r="4" fill="#fff" fill-opacity="0.7"/>
+          <path d="M24 32v6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 38h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Startups & Companies</h2>
       <p class="opacity-80">Learn about innovative AI startups and leading companies.</p>
     </a>
-    <a href="devtools.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Tools for Developers: Explore developer-focused AI libraries, SDKs, and APIs." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">💻</span>
+    <a href="devtools.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI Tools for Developers: Explore developer-focused AI libraries, SDKs, and APIs." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style laptop icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="10" y="16" width="28" height="16" rx="3" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><rect x="8" y="34" width="32" height="4" rx="2" fill="#fff" fill-opacity="0.10"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI Tools for Developers</h2>
       <p class="opacity-80">Explore developer-focused AI libraries, SDKs, and APIs.</p>
     </a>
-    <a href="real-world.html" class="card-section transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI in the Real World: See how AI is transforming industries and daily life." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
-      <span class="mb-4 text-5xl" aria-hidden="true">🌍</span>
+    <a href="real-world.html" class="card-section flex flex-col items-center justify-center text-center transition block focus:outline-none focus:ring-2 focus:ring-indigo-400" tabindex="0" aria-label="AI in the Real World: See how AI is transforming industries and daily life." style="background:rgba(255,255,255,0.10); color:#fff; text-shadow:0 1px 2px rgba(60,30,100,0.10);">
+      <span class="mb-4 text-5xl flex items-center justify-center w-16 h-16 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style globe icon -->
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><circle cx="24" cy="24" r="16" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><ellipse cx="24" cy="24" rx="8" ry="16" fill="#fff" fill-opacity="0.10" stroke="#fff" stroke-width="2"/></svg>
+      </span>
       <h2 class="text-2xl font-bold mb-4">AI in the Real World</h2>
       <p class="opacity-80">See how AI is transforming industries and daily life.</p>
     </a>
