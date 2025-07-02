@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Check for conflicting or missing body/parent styles",
+			"command": "grep -i 'body' index.html | cat",
+			"explanation": "Check for body or parent styles that may hide or obscure the Back to Top button."
+		}
+	]
+}

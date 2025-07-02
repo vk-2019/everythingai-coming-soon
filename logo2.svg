@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108" height="108" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Dynamic Infinity Logo">
+  <defs>
+    <linearGradient id="dynGradient" x1="0" y1="32" x2="64" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="dynGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M20,36 Q28,16 44,28 Q60,40 32,48 Q4,56 20,36 Z" stroke="url(#dynGradient)" stroke-width="7.5" fill="none" filter="url(#dynGlow)" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
