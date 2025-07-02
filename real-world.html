@@ -9,36 +9,35 @@
   <link rel="icon" type="image/svg+xml" href="/logo.svg">
   <meta name="description" content="See how AI is transforming industries and daily life. Real-world applications and case studies.">
   <style>
-    body { font-family: 'Inter', sans-serif; background: linear-gradient(90deg, #a78bfa 0%, #6366f1 100%); color: #fff; }
-    .card { background: rgba(255,255,255,0.10); border-radius: 0.75rem; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10); border: 1px solid rgba(255,255,255,0.20); padding: 2.5rem 2rem; max-width: 540px; margin: 3rem auto; text-align: center; }
-    .card h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
-    .card p { font-size: 1.15rem; opacity: 0.92; margin-bottom: 2rem; }
-    .emoji { font-size: 3rem; margin-bottom: 1.5rem; }
-    a.back-link { color: #fff; text-decoration: underline; opacity: 0.85; transition: color 0.2s; }
-    a.back-link:hover { color: #a78bfa; }
-    @media (max-width: 600px) { .card { padding: 1.5rem 0.5rem; } }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(90deg, #a78bfa 0%, #6366f1 100%); color: #fff; min-height: 100vh; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .container { background: rgba(255,255,255,0.10); border-radius: 1.5rem; padding: 2.5rem 2rem; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10); max-width: 520px; text-align: center; border: 1px solid rgba(255,255,255,0.20); }
+    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 0 1px 2px rgba(60,30,100,0.10); font-family: 'Inter', sans-serif; }
+    p { font-size: 1.15rem; opacity: 0.9; text-shadow: 0 1px 2px rgba(60,30,100,0.10); font-family: 'Inter', sans-serif; }
+    a { color: #a5b4fc; text-decoration: underline; font-family: 'Inter', sans-serif; }
+    a:hover { color: #fff; }
+    .back-link { display: inline-block; margin-top: 2rem; font-size: 1rem; color: #fff; background: linear-gradient(90deg, #a78bfa 0%, #6366f1 100%); padding: 0.5rem 1.25rem; border-radius: 9999px; text-decoration: none; transition: background 0.2s; box-shadow: 0 4px 24px 0 rgba(80,60,180,0.18); font-family: 'Inter', sans-serif; }
+    .back-link:hover { background: #a78bfa; }
   </style>
 </head>
 <body>
-  <nav class="w-full fixed top-0 left-0 bg-gradient-to-r from-purple-700 to-indigo-700 bg-opacity-80 z-20 shadow-lg py-4 px-6 flex justify-center">
-    <a href="index.html" class="text-3xl md:text-4xl font-extrabold tracking-tight drop-shadow-lg" style="font-family: 'Inter', sans-serif; color: #fff;">Everything AI</a>
-  </nav>
-  <main class="pt-32 pb-12">
-    <section class="card" aria-labelledby="realworld-title">
-      <span class="emoji" aria-hidden="true">🌍</span>
-      <h1 id="realworld-title">AI in the Real World</h1>
-      <p>See how AI is transforming industries and daily life. Real-world applications and case studies.</p>
-      <ul class="text-left mx-auto max-w-md space-y-4">
-        <li><strong>Coming Soon:</strong> Examples of AI in healthcare, finance, transportation, education, and more.</li>
-        <li>All content will be original or link to public/open case studies—no proprietary information.</li>
-      </ul>
-      <div class="mt-8">
-        <a href="index.html" class="back-link">← Back to Home</a>
-      </div>
-    </section>
-  </main>
-  <footer class="text-center opacity-50 w-full absolute bottom-4 left-0">
-    <p>&copy; 2025 Everything AI. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <nav class="w-full fixed top-0 left-0 bg-gradient-to-r from-purple-700 to-indigo-700 bg-opacity-80 z-20 shadow-lg py-4 px-6 flex justify-center">
+      <a href="index.html" class="text-3xl md:text-4xl font-extrabold tracking-tight drop-shadow-lg" style="font-family: 'Inter', sans-serif; color: #fff;">Everything AI</a>
+    </nav>
+    <main class="pt-32 pb-12">
+      <section class="card" aria-labelledby="realworld-title">
+        <span class="emoji" aria-hidden="true">🌍</span>
+        <h1 id="realworld-title">AI in the Real World</h1>
+        <p>See how AI is transforming industries and daily life. Real-world applications and case studies.</p>
+        <ul class="text-left mx-auto max-w-md space-y-4">
+          <li><strong>Coming Soon:</strong> Examples of AI in healthcare, finance, transportation, education, and more.</li>
+          <li>All content will be original or link to public/open case studies—no proprietary information.</li>
+        </ul>
+        <div class="mt-8">
+          <a href="index.html" class="back-link">&larr; Back to Everything AI</a>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
