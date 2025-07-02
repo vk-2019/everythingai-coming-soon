@@ -300,56 +300,67 @@
     <div class="max-w-2xl mx-auto my-16 bg-gradient-to-br from-purple-700 via-indigo-700 to-indigo-800 rounded-2xl p-8 text-white shadow-2xl relative border border-white/20">
       <button id="close-poll" class="absolute top-4 right-6 text-3xl text-white/70 hover:text-white transition" style="background:none; border:none; cursor:pointer;">&times;</button>
       <h2 class="text-3xl font-extrabold mb-6 text-center tracking-tight">AI Generalist Self-Evaluation</h2>
+      <p class="mb-6 text-center text-indigo-100 opacity-90">This brief self-evaluation helps you assess your AI knowledge and skills across core areas. For each statement, select the answer that best matches your confidence. Your results will include personalized learning resources for any gaps!</p>
       <form id="aiGeneralistPoll" class="space-y-6">
         <ol class="space-y-4 text-left">
           <li>
             <p class="font-semibold mb-2">1. Fundamentals: <span class="font-normal">I can explain in my own words what AI, machine learning, and deep learning are, and how they relate to one another.</span></p>
             <label class="mr-6"><input type="radio" name="q1" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q1" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q1" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">2. Math &amp; Statistics: <span class="font-normal">I understand why vectors, matrices, and probability underpin ML algorithms.</span></p>
             <label class="mr-6"><input type="radio" name="q2" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q2" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q2" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">3. Algorithms: <span class="font-normal">I know at least three common ML families (decision trees, neural networks, clustering) and can pick the right one for a given problem.</span></p>
             <label class="mr-6"><input type="radio" name="q3" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q3" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q3" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">4. Data Workflow: <span class="font-normal">I’m confident outlining an end-to-end pipeline: data cleaning, feature engineering, train/test splitting, and EDA.</span></p>
             <label class="mr-6"><input type="radio" name="q4" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q4" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q4" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">5. Model Evaluation: <span class="font-normal">I can choose and interpret metrics (accuracy, F1, RMSE, etc.) and know when to favor precision/recall versus overall accuracy.</span></p>
             <label class="mr-6"><input type="radio" name="q5" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q5" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q5" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">6. Deep Learning &amp; LLMs: <span class="font-normal">I’ve used a neural-network framework (TensorFlow or PyTorch) or can explain how transformers work.</span></p>
             <label class="mr-6"><input type="radio" name="q6" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q6" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q6" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">7. Computer Vision: <span class="font-normal">I understand at a high level how convolutional neural networks process images and why they excel at vision tasks.</span></p>
             <label class="mr-6"><input type="radio" name="q7" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q7" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q7" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">8. MLOps &amp; Deployment: <span class="font-normal">I know the key steps to containerize a model, deploy it as an API, and set up basic monitoring.</span></p>
             <label class="mr-6"><input type="radio" name="q8" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q8" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q8" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">9. Ethics &amp; Governance: <span class="font-normal">I’m aware of common AI fairness and bias pitfalls, and general strategies to mitigate them.</span></p>
             <label class="mr-6"><input type="radio" name="q9" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q9" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q9" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
           <li>
             <p class="font-semibold mb-2">10. Product Integration: <span class="font-normal">I can describe how to frame an AI feature end-to-end—define the problem, identify data needs, outputs, and success metrics.</span></p>
             <label class="mr-6"><input type="radio" name="q10" value="yes" class="accent-indigo-400"> Yes</label>
+            <label class="mr-6"><input type="radio" name="q10" value="somewhat" class="accent-indigo-400"> Somewhat</label>
             <label><input type="radio" name="q10" value="no" class="accent-indigo-400"> No / Not sure</label>
           </li>
         </ol>
@@ -357,11 +368,14 @@
           <button type="submit" class="bg-purple-600 hover:bg-indigo-600 text-white font-semibold px-8 py-2 rounded-full shadow transition">Submit</button>
         </div>
       </form>
-      <div id="pollResult" style="display:none;" class="mt-8 p-6 rounded-xl bg-white/10 border border-white/20 text-white">
+      <div id="pollResult" style="display:none;" class="mt-8 p-6 rounded-xl bg-white/10 border border-white/20 text-white" aria-live="polite">
         <h3 class="text-2xl font-bold mb-2">Your AI Generalist Score: <span id="scorePct"></span>%</h3>
         <div id="recommendations">
           <p class="mb-2">If you answered “No” or “Not sure,” check out these resources:</p>
           <ul id="recList" class="list-disc list-inside space-y-1"></ul>
+        </div>
+        <div class="text-center mt-6">
+          <button id="retake-poll" class="bg-indigo-600 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full shadow transition">Retake Survey</button>
         </div>
       </div>
     </div>
@@ -428,15 +442,35 @@
         for(let i=1; i<=10; i++){
           const answer = e.target.elements['q'+i].value;
           if(answer === 'yes') score += 10;
+          else if(answer === 'somewhat') {
+            score += 5;
+            const r = resources['q'+i];
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>Q${i}:</strong> <span class='text-yellow-300 font-semibold'>Somewhat</span> &mdash; <a href="${r.url}" target="_blank" rel="noopener" class="underline hover:text-indigo-300">${r.text}</a> <span class="text-sm opacity-80">by ${r.author}</span>`;
+            recList.appendChild(li);
+          }
           else {
             const r = resources['q'+i];
             const li = document.createElement('li');
-            li.innerHTML = `<strong>Q${i}:</strong> <a href="${r.url}" target="_blank" rel="noopener" class="underline hover:text-indigo-300">${r.text}</a> <span class="text-sm opacity-80">by ${r.author}</span>`;
+            li.innerHTML = `<strong>Q${i}:</strong> <span class='text-red-300 font-semibold'>No / Not sure</span> &mdash; <a href="${r.url}" target="_blank" rel="noopener" class="underline hover:text-indigo-300">${r.text}</a> <span class="text-sm opacity-80">by ${r.author}</span>`;
             recList.appendChild(li);
           }
         }
-        document.getElementById('scorePct').textContent = score;
-        document.getElementById('pollResult').style.display = 'block';
+        const pct = Math.round(score);
+        // Animate the score reveal
+        let current = 0;
+        const scoreElem = document.getElementById('scorePct');
+        function animateScore() {
+          if(current < pct) {
+            current++;
+            scoreElem.textContent = current;
+            setTimeout(animateScore, 15);
+          } else {
+            scoreElem.textContent = pct;
+          }
+        }
+        animateScore();
+        document.getElementById('pollResult').style.display = '';
         document.getElementById('pollResult').scrollIntoView({ behavior:'smooth' });
       }
     });
@@ -460,6 +494,13 @@
       backToTopBtn.blur();
     });
   });
+
+  document.getElementById('retake-poll').onclick = function() {
+    document.getElementById('aiGeneralistPoll').reset();
+    document.getElementById('pollResult').style.display = 'none';
+    document.getElementById('scorePct').textContent = '';
+    document.getElementById('recList').innerHTML = '';
+  };
   </script>
 </body>
 </html>
