@@ -19,33 +19,20 @@
     .back-link:hover { background: #a78bfa; }
   </style>
 </head>
-<body>
-  <nav class="w-full fixed top-0 left-0 bg-gradient-to-r from-purple-700 to-indigo-700 bg-opacity-80 z-20 shadow-lg py-4 px-6 flex justify-center">
-    <a href="index.html" class="text-3xl md:text-4xl font-extrabold tracking-tight drop-shadow-lg" style="font-family: 'Inter', sans-serif; color: #fff;">Everything AI</a>
+<body class="bg-gradient-to-r from-purple-600 to-indigo-600 min-h-screen flex flex-col items-center justify-center text-white px-4">
+  <nav class="w-full fixed top-0 left-0 bg-gradient-to-r from-purple-600 to-indigo-600 bg-opacity-90 z-20 shadow-lg py-4 px-6 flex items-center border-b border-white/15" style="backdrop-filter: blur(6px);">
+    <span class="mx-auto text-4xl md:text-5xl font-extrabold tracking-tight drop-shadow-lg banner-shimmer" style="font-family: 'Inter', sans-serif; letter-spacing: -0.01em; color: #fff; line-height: 1.2; padding: 0.15em 0; overflow: visible; display: block; text-align: center;">Everything AI</span>
   </nav>
-  <main class="pt-32 pb-12">
-    <div class="container">
-      <section class="card" aria-labelledby="projects-title">
-        <span class="emoji" aria-hidden="true">🧪</span>
-        <h1 id="projects-title">AI Projects & Demos</h1>
-        <p>Discover a curated collection of hands-on AI projects and interactive demos. Experiment, learn, and see artificial intelligence in action—no matter your experience level.</p>
-        <ul class="text-left mx-auto max-w-md space-y-4">
-          <li><strong>Coming Soon:</strong> Explore open-source AI project showcases, code walkthroughs, and live demos designed to inspire and teach.</li>
-          <li>All demos and projects will be original or based on open/public resources, with clear attributions and no proprietary content.</li>
-        </ul>
-        <div class="mt-8 text-center">
-          <a href="index.html" class="bg-purple-600 hover:bg-indigo-600 text-white font-semibold px-8 py-2 rounded-full shadow transition inline-block">&larr; Back to Everything AI</a>
-        </div>
-      </section>
+  <main class="flex flex-col items-center justify-center w-full min-h-screen">
+    <div class="backdrop-blur bg-white/10 rounded-2xl border border-white/20 max-w-2xl mx-auto my-24 p-8 flex flex-col items-center text-center">
+      <span class="mb-6 text-5xl flex items-center justify-center w-20 h-20 rounded-full bg-white/10 shadow-inner" aria-hidden="true">
+        <!-- iOS-style flask/experiment icon -->
+        <svg width="48" height="48" fill="none" viewBox="0 0 48 48" aria-hidden="true" class="mx-auto"><rect x="20" y="10" width="8" height="16" rx="4" fill="#fff" fill-opacity="0.15" stroke="#fff" stroke-width="2"/><path d="M24 26v8a8 8 0 01-8 8h16a8 8 0 01-8-8v-8" stroke="#fff" stroke-width="2" fill="#fff" fill-opacity="0.10"/></svg>
+      </span>
+      <h1 class="text-3xl font-bold mb-4">AI Projects & Demos</h1>
+      <p class="opacity-80 mb-6">Explore hands-on projects and interactive AI demos.</p>
+      <a href="index.html" class="mt-4 bg-purple-600 hover:bg-indigo-600 text-white font-semibold px-8 py-2 rounded-full shadow transition">Back to Everything AI</a>
     </div>
   </main>
-  <footer class="text-center opacity-50 w-full absolute bottom-4 left-0">
-    <p>&copy; 2025 Everything AI. All rights reserved.</p>
-    <div class="mt-1 space-x-4">
-      <a href="privacy.html" class="underline hover:text-indigo-200 focus:text-indigo-100 transition">Privacy Policy</a>
-      <span class="text-white/30">|</span>
-      <a href="terms.html" class="underline hover:text-indigo-200 focus:text-indigo-100 transition">Terms of Use</a>
-    </div>
-  </footer>
 </body>
 </html>
